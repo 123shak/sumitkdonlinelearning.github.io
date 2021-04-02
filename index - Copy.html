@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="header-wrapper">
+    
+        <header class="main-header">
+            <nav class="main-nav">
+
+                        <a href="#"><img src="img/student.png" alt="" width="50" height="60"></a>
+                    
+                <ul>
+                    <li class="nav-anim">
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li class="nav-anim">
+                        <a href="#">About</a>
+                    </li>
+
+                    <li class="nav-anim">
+                        <a href="#">Help</a>
+                    </li>
+                    <li class="nav-anim">
+                        <a href="#">Courses</a>
+                    </li>
+                    <li class="nav-anim">
+                        <a href="#">Get Started</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <nav class="mobile-nav">
+                <a href="#" class="mobile-logo">
+                    <img src="img/Logo.png" alt="">
+                </a>
+                
+                <a class="menu-button" href="#">
+                    <img src="img/Menu-Button.png" alt="">
+                </a>
+            </nav>
+
+           <!-- <div class="mobile-menu-items">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Downloads</a>
+                    </li>
+                </ul>
+            </div>-->
+
+            <div class="hero-container">
+                <div class="hero-left">
+                    <h1 class="hero-heading">Get Start With Best Online Learning</h1>
+                    <p class="hero-subheading">Here you will find the world best learning platform.<br> Tell us, what you want to learn,<br> We will search the best course for you. </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-image"><img class='hero-image-img' src="img/Hero-Image.png" alt=""></div>
+                    <div class="searchbox-container">
+                        <input type="text" placeholder="your Courses...">
+                        <input type="submit" value='Find'>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <img class="desktop-bg" src="img/Desktop-BG.png" alt="">
+
+        <img class="mobile-bg" src="img/Mobile-BG.png" alt="">
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    
+    <script>
+        gsap.from('h1.hero-heading', {opacity: 0, duration: 2, ease: Circ.easeOut})
+        gsap.from('p.hero-subheading', {opacity: 0, x:-50, delay: 0.4, duration: 2, ease: Circ.easeOut})
+        gsap.from('.hero-container a.btn', {opacity: 0, x:-50, delay: 1.2, duration: 2, ease: Circ.easeOut})
+
+        gsap.from('nav.main-nav', {opacity: 0, y:-50, delay: 1, duration: 2, ease: Circ.easeOut})
+        gsap.from('.hero-image-img', {opacity: 0, x:100, delay: 1.8, duration: 2, ease: Circ.easeOut})
+        gsap.from('.searchbox-container', {opacity: 0, x:-40, delay: 2.2, duration: 2, ease: Circ.easeOut})
+
+        gsap.from('.nav-anim', {opacity: 0, x:-30, delay: 1.5, duration: 2, ease: Circ.easeOut, stagger: 0.2})
+
+        // Mobile version
+        
+        gsap.from('.mobile-logo', {opacity: 0, x:-30, delay: 1.8, duration: 2, ease: Circ.easeOut})
+        gsap.from('.menu-button', {opacity: 0, x:30, delay: 1.8, duration: 2, ease: Circ.easeOut})
+
+  </script>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
